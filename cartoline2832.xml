@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Progetto Codifica di Testi 2022-23: Cartoline della Grande Guerra </title>
+                
+                <respStmt>
+                    <resp>Trascrizione a cura di</resp>
+                    <persName xml:id="RC">Rachele Colombaioni</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Ente di Appartenenza</resp>
+                    <name type="comune" xml:id="CSP">Comune della Spezia</name>
+                </respStmt>
+            </titleStmt>
+            
+            <editionStmt>
+                <edition>Studenti di Codifica di Testi, Corso di Laurea di Informatica Umanistica, Università di Pisa
+                    <date when="2022" xml:id="a_2022">2022</date>
+                </edition>
+                
+                <respStmt>
+                    <resp>Codificato da</resp>
+                    <name ref="#RC"></name>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Compilatore</resp>
+                    <persName xml:id="TC">Tommaso Castagneto</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <persName xml:id="GP">Giacomo Paolicchi</persName>
+                    <persName xml:id="ES">Enrica Salvatori</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <persName xml:id="MR">M. Ratti</persName>
+                </respStmt>
+            </editionStmt>
+            
+            
+            <publicationStmt>
+                <publisher xml:id="UNIPI">Università di Pisa</publisher>
+                <pubPlace xml:id="PI"> Pisa </pubPlace>
+                <availability>
+                    <p xml:id="Alo">Available under licence only</p>
+                </availability>
+                <date ref="a_2022"></date>
+                <distributor xml:id="LabCD">LabCD</distributor>
+                <address>
+                    <addrLine xml:id="CulDigi">Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine>
+                        <ref target="#PI"></ref>
+                    </addrLine>
+                </address>
+            </publicationStmt>
+            
+            
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country xml:id="IT">Italia</country>
+                        <settlement xml:id="SP">La Spezia (SP)</settlement>
+                        <repository xml:id="MCE">Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                    </msIdentifier>
+                    
+                    <msContents>
+                        <summary xml:id="c_Art">Cartoline Artistiche</summary>
+                        <textLang mainLang="ita" xml:id="ita">Testo in italiano</textLang>
+                    </msContents>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>                
+    
+    <!--cartolina 28-->
+    <TEI>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title> Cartolina 28 </title>
+                </titleStmt>
+                
+                <publicationStmt>
+                    <publisher ref="#UNIPI"></publisher>
+                    <pubPlace ref="#PI"></pubPlace>
+                    <availability>
+                        <p>
+                            <ref target="#Alo"></ref>
+                        </p>
+                    </availability>
+                    <date ref="#2022"></date>
+                    <distributor ref="#LabCD"></distributor>
+                    <address>
+                        <addrLine>
+                            <ref target="#CulDigi"></ref>
+                        </addrLine>
+                        <addrLine>
+                            <ref target="#PI"></ref>
+                        </addrLine>
+                    </address>
+                </publicationStmt>
+                
+                <!-- Note esterne alla codifica -->
+                <notesStmt>
+                    <note> Sulla cartolina non è stato applicato nessun francobollo e nesusn timbro perchè non è mai stata spedita. </note>
+                </notesStmt>
+                
+                <sourceDesc>
+                    <bibl>
+                        <title type="desc"> [Saluti da La Spezia] </title>
+                        <publisher xml:id="ECC"> Ed. Cartoleria Cavalca </publisher>
+                        <pubPlace ref="#SP"> La Spezia </pubPlace>
+                    </bibl>
+                    <msDesc>
+                        <msIdentifier>
+                            <country ref="#IT"></country>
+                            <settlement ref="#SP"></settlement>
+                            <repository ref="#MCE"></repository>
+                            <idno>7694_028</idno>
+                        </msIdentifier>   
+                        
+                        <msContents>
+                            <summary>
+                                <ref target="#c_Art"></ref>
+                            </summary>
+                        </msContents>
+                        
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartoline</objectType>
+                                        <material>Carta</material>
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                    </support>
+                                    <condition>
+                                        <p>Cartoline in buone condizioni fisiche.</p>
+                                    </condition>
+                                </supportDesc>
+                                <layoutDesc>
+                                    <p>Oltre alle fotografie, troviamo sempre sulla destra, sotto la seconda foto, il testo che recita "Saluti da La Spezia", 
+                                        caratterizzato da una particolare scelta per quanto riguarda la posizione (leggermente spostato verso il basso, quindi risulta decentrato) e 
+                                        per la scelta del font di caratteri.</p>
+                                </layoutDesc>
+                            </objectDesc>
+                        </physDesc> 
+                    </msDesc>
+                </sourceDesc> 
+            </fileDesc> 
+            
+            <profileDesc> 
+                <textClass>
+                    <keywords>
+                        <!--soggettario-->
+                        <term>Cartolina</term>
+                        <!--tipologia-->
+                        <term> Cartolina Artistica</term>
+                        <!--descrizione-->
+                        <term>Scorci della città di La Spezia </term>
+                    </keywords>
+                </textClass>
+            </profileDesc>
+        </teiHeader>
+        
+        
+        <facsimile xml:id="c28">
+            <!-- Definizione della superficie di scrittura in termini di uno spazio espresso attraverso un sistema di coordinate -->
+            <surface xml:id="retro_postcard_28">
+                <!-- retro della cartolina -->
+                <graphic  url='immagini/7694-028R.jpg' width='390px' height='600px'/>
+                <!-- riquadro retro cartolina -->
+                <zone ulx="0" uly="-1" lrx="1" lry="1059" />
+                <!-- stampa testo fondo pagina -->
+                <zone xml:id="c28R_stamp" points = ' 56,899 54,926 54,949 54,984 659,993 659,967 657,942 657,911 657,903 ' />
+                <zone xml:id="c28R_rg5" ulx="69" uly="922" lrx="599" lry="926" />
+                <zone xml:id="c28R_rg6" ulx="150" uly="950" lrx="654" lry="951" />
+                <zone xml:id="c28R_rg7" ulx="217" uly="982" lrx="555" lry="983" />
+                <!--linea centrale-->
+                <zone xml:id="c28R_line"  ulx="844" uly="147" lrx="844" lry="944" />
+                <!-- riquadro per indicare numero inserito a mano -->
+                <zone xml:id="c28R_num" points = ' 1491,37 1495,101 1601,102 1601,37 ' />
+                <!-- riquadro segnato per francobollo -->
+                <zone xml:id="c28R_f1" ulx="1341" uly="72" lrx="1341" lry="326" />
+                <zone xml:id="c28R_f2" ulx="1351" uly="329" lrx="1551" lry="330" />
+                <!-- righe segnate per eventuale scrittura parte sx cartolina -->
+                <zone xml:id="c28R_rg1" ulx="872" uly="533" lrx="1554" lry="538" />
+                <zone xml:id="c28R_rg2" ulx="883" uly="679" lrx="1549" lry="681" />
+                <zone xml:id="c28R_rg3" ulx="1047" uly="945" lrx="1514" lry="946" />
+                <zone xml:id="c28R_rg4" ulx="1025" uly="963" lrx="1560" lry="965" />
+                <zone xml:id="c28R_stamp1" ulx="1057" uly="993" lrx="1439" lry="996"/>
+            </surface>
+            <!-- immagine | fronte della cartolina -->
+            <surface xml:id="front_cartolina_28">
+                <graphic url='immagini/7694-028F.jpg' width='1656.4px' height='1060.4px'/>
+                <!-- riquadro fronte della cartolina --> 
+                <zone ulx="0" uly="1" lrx="2" lry="1058" /> 
+                <!-- secondo riquadro fronte cartolina -->
+                <zone points = ' 1607,996 1603,729 1065,739 1035,725 1015,707 1003,680 1001,659 1003,636 1012,615 1023,601 1032,589 1043,581 1057,575 1071,571 1089,570 1104,571 1120,576 1132,582 1145,588 1153,597 1159,607 1165,615 1170,625 1172,635 1172,643 1194,643 1604,637 1605,56 83,64 81,996 ' />
+                <!-- primo riquadro in alto a destra -->
+                <zone points = ' 1503,70 1509,512 891,518 889,79 888,79 889,79 ' />
+                <zone xml:id="c28F_img1" ulx="903" uly="95" lrx="904" lry="502" />
+                <!-- secondo riquadro in alto a sinistra-->
+                <zone xml:id="c28F_img2"  points = ' 707,96 115,259 227,682 299,663 294,652 291,639 294,627 302,622 311,618 319,617 319,611 331,611 342,612 347,613 349,601 352,594 359,595 367,599 376,605 387,610 398,613 408,617 412,620 419,625 421,630 815,518 825,518 ' />
+                <zone points = ' 238,666 292,651 291,640 291,633 295,626 304,620 311,617 320,616 320,611 327,611 337,612 347,614 347,608 349,600 351,595 358,596 366,601 373,604 380,607 389,610 395,612 405,615 412,620 808,504 701,113 135,269 ' />
+                <!-- riquadri ideali per titolo cartolina -->
+                <zone xml:id="c28F_G" points = ' 1604,728 1604,638 1174,643 1168,622 1159,607 1148,593 1134,583 1115,574 1092,569 1073,570 1056,574 1044,582 1031,590 1020,602 1011,614 1006,629 1000,646 1000,660 1003,672 1007,688 1015,703 1025,715 1035,725 1047,733 1059,738 ' />
+                <zone xml:id="c28F_P" points = ' 1190,551 1187,622 1463,617 1463,550 ' />
+            </surface>
+        </facsimile>  
+        
+        <text type="postcard">
+            <body>
+                <!--fronte-->
+                <div facs="#front_cartolina_28" type="fronte">
+                    <figure>
+                        <graphic url="immagini/7694-028F.jpg"></graphic>
+                        <figDesc>
+                            Il fronte della cartolina in bianco e nero, è caratterizzato dalla riproduzione di 
+                            una nave in mare, probabilmente vicino alla costa data la presenza dei gabbiani;
+                            sono poi presenti, altre due raffigurazioni, che propongono scorci della città di La Spezia, inseriti come fossero due fotografie appese;
+                            entrambe sono caratterizzate da una bordatura bianca, che fa da cornice.  
+                        </figDesc>
+                        <head> Saluti da La Spezia</head>
+                        <fw type="logo" place="bottom-right" facs="#c28F_G"> La Spezia </fw>
+                        <fw type="logo1" place="bottom-right" facs="#c28F_P">Saluti da</fw>
+                    </figure>
+                </div>    
+                <!--retro-->
+                <div facs="#retro_postcard_28" type="retro">
+                    <fw type="no.cartolina" place="top-right" facs="#c28R_num">28</fw>
+                </div>
+                
+                
+                <div type="tipografia">
+                    <p rend="writing-mode(horizontal-lr) text-orientation(sideways)">
+                        <fw type="retro-tipo" place="left" facs="#retro_postcard_28">
+                            
+                            <s>48377 Ed. Cartoleria Cavalca - La Spezia</s>
+                            <s>Visto ufficio stampa R. Prefettura - Lerni</s>
+                            <s> RIPRODUZIONE VIETATA </s>
+                            
+                        </fw>
+                    </p>
+                </div>
+            </body>
+        </text>
+    </TEI> 
+    
+    <!--cartolina 32-->
+    <TEI>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title> Cartolina 32 </title>
+                </titleStmt>
+                
+                <publicationStmt>
+                    <publisher ref="#UNIPI"></publisher>
+                    <pubPlace ref="#PI"></pubPlace>
+                    <availability>
+                        <p>
+                            <ref target="#Alo"></ref>
+                        </p>
+                    </availability>
+                    <date ref="#2022"></date>
+                    <distributor ref="#LabCD"></distributor>
+                    <address>
+                        <addrLine>
+                            <ref target="#CulDigi"></ref>
+                        </addrLine>
+                        <addrLine>
+                            <ref target="#PI"></ref>
+                        </addrLine>
+                    </address>
+                </publicationStmt>
+                
+                <!-- Note esterne alla codifica -->
+                <notesStmt>
+                    <note> Sulla cartolina non è stato applicato nessun francobollo e nesusn timbro perchè non è mai stata spedita. </note>
+                </notesStmt>
+                
+                <sourceDesc>
+                    <bibl>
+                        <title type="desc"> [Passeggiata Morini] </title>
+                        <publisher xml:id="SGC"> Stab. Grafico Cesare Capello </publisher>
+                        <pubPlace xml:id="MI"> Milano </pubPlace>
+                    </bibl>
+                    <msDesc>
+                        <msIdentifier>
+                            <country ref="#IT"></country>
+                            <settlement ref="#SP"></settlement>
+                            <repository ref="#MCE"></repository>
+                            <idno>7694_032</idno>
+                        </msIdentifier>   
+                        
+                        <msContents>
+                            <summary>
+                                <ref target="#c_Art"></ref>
+                            </summary>
+                        </msContents>
+                        
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartoline</objectType>
+                                        <material>Carta</material>
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                    </support>
+                                    <condition>
+                                        <p>Cartoline in buone condizioni fisiche.</p>
+                                    </condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc> 
+                    </msDesc>
+                </sourceDesc> 
+            </fileDesc> 
+            
+            <profileDesc> 
+                <textClass>
+                    <keywords>
+                        <!--soggettario-->
+                        <term>Cartolina</term>
+                        <!--tipologia-->
+                        <term> Cartolina Artistica</term>
+                        <!--descrizione-->
+                        <term>Scorcio della passeggiata Morini lungomare di La Spezia</term>
+                    </keywords>
+                </textClass>
+            </profileDesc>
+        </teiHeader>
+        
+        
+        <facsimile xml:id="c32">
+            <!-- Definizione della superficie di scrittura in termini di uno spazio espresso attraverso un sistema di coordinate -->
+            <surface xml:id="retro_cart_032">
+                <!-- retro della cartolina -->
+                <graphic url='immagini/7694-032R.jpg' width='1652.8px' height='1059.8px'/>
+                <!-- riquadro fondo pagina centrale --> 
+                <zone points = ' 807,949 807,981 921,981 921,950 ' />
+                <!-- area adibita al francobollo -->
+                <zone xml:id="c32R_cifra" points = ' 1361,70 1364,330 1587,330 ' />
+                <!-- riquadro creato per inserire num riportato in alto a sinistra -->
+                <zone xml:id="c32R_num" points = ' 1524,11 1524,62 1619,62 1615,8 ' />
+                <!-- riquadro principale cartolina -->
+                <zone ulx="1" uly="-2" lrx="1651" lry="1056" />
+                <!-- linea verticale centrale -->
+                <zone ulx="854" uly="150" lrx="859" lry="928" />
+                <!-- linee orizzontali dove poter scrivere -->
+                <zone ulx="1052" uly="923" lrx="1585" lry="926" />
+                <zone ulx="1057" uly="904" lrx="1582" lry="905" />
+                <zone ulx="894" uly="734" lrx="1583" lry="737" />
+                <zone ulx="891" uly="614" lrx="1583" lry="619" />
+                <zone ulx="895" uly="499" lrx="1364" lry="501" />
+            </surface>
+            <!-- immagine | fronte della cartolina -->
+            <surface xml:id="front_cartolina_32">
+                <graphic url='immagini/7694-032F.jpg' width='1651.4px' height='1060.4px'/>
+            </surface>
+        </facsimile>  
+        
+        <text type="postcard">
+            <body>
+                <!--fronte-->
+                <div facs="#fronte_cart_032" type="fronte">
+                    <figure>
+                        <graphic url="immagini/7694-032F.jpg"></graphic>
+                        <figDesc>
+                            Nella cartolina che stiamo visionando adesso, troviamo un'unica fotografia in bianco e nero,
+                            rappresentante la Passeggiata C. Morini.
+                            La fotografia seppur semplice, colpisce perchè raffigura, oltre uno scorcio rappresentativo della città,
+                            anche una scena di vita quotidiana, per cui possiamo ad esempio trovare, barche ormeggiate vicino alla riva, uomini intenti a passeggiare,
+                            ma anche uomini che sembrano invece intenti a lavorare.
+                        </figDesc>
+                        <head>  La Spezia - Passeggiata C.Morini  </head>
+                        <fw type="logo" place="bottom-right" facs="#c28F_G"><placeName ref="SP"> La Spezia </placeName></fw>
+                        <fw type="logo1" place="bottom-right" facs="#c28F_P"> Passeggiata C.Morini </fw>
+                    </figure>
+                </div>    
+                <!--retro-->
+                <div facs="#retro-postcard-32" type="retro">
+                    <fw type="no.cartolina" place="top-right" facs="#c32R_num">32</fw>
+                </div>
+                
+                
+                <div type="tipografia">
+                    <p rend="writing-mode(horizontal-lr) text-orientation(sideways)">
+                        <fw type="retro-tipo" place="left" facs="#retro_postcard_28">
+                            
+                            <s>1939 -</s>
+                            <s>Stab. Grafica Cesare Capello-<placeName ref="MI"> Milano</placeName></s>
+                            
+                        </fw>
+                    </p>
+                </div>
+            </body>
+        </text>
+    </TEI> 
+</teiCorpus>
+
+

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap");
+
+body {
+    background-color: rgb(247, 246, 245);
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+header {
+    background-color: rgb(247, 211, 169);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1em;
+}
+
+.view,
+#intro_link,
+#about_link {
+    background-color: #FAF9F7;
+}
+
+header a {
+    flex-grow: 1;
+    color: black;
+    padding: 1%;
+    margin: 1px;
+    border: 1.5px solid black;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: large;
+}
+
+header a:hover {
+    transform: scale(1.2);
+    background-color: #F0EFED;
+    color: black;
+    cursor: pointer;
+}
+
+header a.active {
+    background-color: #E0E0DE;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    background-color: rgba(37, 32, 32, 0.649);
+    color: rgb(223, 193, 155);
+    padding: 15px;
+}
+
+.header {
+    background-color: rgba(37, 32, 32, 0.041);
+    color: rgb(223, 193, 155);
+    padding: 8px;
+    text-align: center;
+}
+
+.not1 {
+    font-size: 30px;
+    color: antiquewhite;
+    background-color: coral;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    width:fit-content;
+    
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+
+b {
+    margin: 15px;
+}
+
+.view{
+    background-color: rgba(37, 32, 32, 0.041);
+}
+
+#cart1,
+#cart2{
+    background-color: rgba(222, 184, 135, 0.12);
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.not {
+    font-size: 15px;
+    color: rgb(67, 65, 65);
+    margin: 10px;
+}
+
+.divisore {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.contimg {
+    margin: 20px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+footer {
+    background-color: rgb(65, 65, 65);
+    color: antiquewhite;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.footer_text {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer{
+    background-color: rgba(245, 245, 245, 0);
+    color:beige;
+}
