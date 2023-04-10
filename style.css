@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap");
 
 body {
-    background-color: rgb(247, 246, 245);
+    background-color: rgba(222, 184, 135, 0.12);
     font-family: 'Montserrat', sans-serif;
     display: block;
 }
@@ -44,6 +44,12 @@ header a.active {
     background-color: #E0E0DE;
 }
 
+a{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
 h1 {
     font-size: 45px;
     text-align: center;
@@ -62,11 +68,12 @@ h1 {
 .not1 {
     font-size: 30px;
     color: antiquewhite;
-    background-color: coral;
-    padding: 10px;
+    background-color: rgba(37, 32, 32, 0.649);
+    padding: 20px;
     text-align: center;
     margin: 10px;
-    width:fit-content;
+    width:auto;
+    margin-bottom: 10px;
     
 }
 
@@ -92,6 +99,7 @@ b {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
 }
 
 .not {
@@ -104,6 +112,10 @@ b {
     display: block;
     margin: 0px auto;
     text-align: center;
+    padding: 30px;
+    height: 70px;
+    width: 300px;
+    
 }
 
 .contimg {
@@ -124,6 +136,7 @@ footer {
     color: antiquewhite;
     position: absolute;
     margin-top: 10px;
+    padding: 20px;
 }
 
 .footer_text {

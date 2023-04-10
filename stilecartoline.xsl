@@ -17,6 +17,9 @@
                 <link rel="stylesheet" href="style.css"/>
             </head>
             <body>
+                <h1>
+                    <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                </h1>
                 <header>
                     <a id="intro_link" href="#intro">Introduzione</a>
                     <!-- BOTTONI PER ATTIVARE LA VISTA DELLE CARTOLINE -->
@@ -26,23 +29,31 @@
                 </header>
                 <main>
                     <div class="header">
-                        <h1>
-                            <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
-                        </h1>
-                        <p><strong>Provenienza cartoline:</strong></p>
                         
-                        <p><xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:repository"/>,</p>
-                        <p> a: <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:settlement"/>,
-                            <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:country"/></p>
+                        <h3><strong>Provenienza cartoline:</strong></h3>
+                        
+                        <h3><xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:repository"/>,</h3>
+                        <h3> a: <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:settlement"/>,
+                            <xsl:value-of select="tei:teiCorpus/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:country"/></h3>
                     </div>  
-                    
+                    <xsl:element name="img">
+                        <xsl:attribute name="src">immagini/pattern1.png</xsl:attribute>
+                        <xsl:attribute name="class">divisore</xsl:attribute>
+                    </xsl:element>
                     <div class="view" id="28">
                         <xsl:apply-templates select="/tei:teiCorpus/tei:TEI[1]"/>
                     </div>
+                    <xsl:element name="img">
+                        <xsl:attribute name="src">immagini/pattern1.png</xsl:attribute>
+                        <xsl:attribute name="class">divisore</xsl:attribute>
+                    </xsl:element>
                     <div class="view" id="32">
                         <xsl:apply-templates select="/tei:teiCorpus/tei:TEI[2]"/>
                     </div>
-                    
+                    <xsl:element name="img">
+                        <xsl:attribute name="src">immagini/pattern1.png</xsl:attribute>
+                        <xsl:attribute name="class">divisore</xsl:attribute>
+                    </xsl:element>
                 </main>              
                 <footer>
                     <div id="about" class="footer_text">
@@ -71,12 +82,6 @@
     
     <!-- titolo cartolina e nota introduttiva -->
     <xsl:template match="tei:TEI/tei:teiHeader">
-        <xsl:element name="div">
-            <xsl:element name="img">
-                <xsl:attribute name="src">immagini/pattern1.png</xsl:attribute>
-                <xsl:attribute name="class">divisore</xsl:attribute>
-            </xsl:element>
-        </xsl:element>
         <h2 class="not1"><b>Titolo dell'opera: </b><xsl:value-of select="tei:fileDesc/tei:sourceDesc/tei:bibl/tei:title"/></h2>
         <p class="not"><b>Rappresentazione: </b><xsl:value-of select="tei:profileDesc/tei:textClass/tei:keywords/tei:term[3]"/></p>
         <p class="not"><b>Note: </b><xsl:value-of select="tei:profileDesc/tei:textClass/tei:keywords/tei:term[2]"/>,<xsl:value-of select="tei:fileDesc/tei:notesStmt/tei:note"/></p>
