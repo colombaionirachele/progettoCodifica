@@ -244,13 +244,20 @@
                 
                 <div type="tipografia">
                     <p rend="writing-mode(horizontal-lr) text-orientation(sideways)">
-                        <fw type="retro-tipo" place="left" facs="#retro_postcard_28">
+                        <fw type="retro-tipo" place="bottom-left" facs="#retro_postcard_28">
                             
                             <s>48377 Ed. Cartoleria Cavalca - La Spezia</s>
-                            <s>Visto ufficio stampa R. Prefettura - Lerni</s>
+                            <s>Visto ufficio stampa R. Prefettura - Terni</s>
                             <s> RIPRODUZIONE VIETATA </s>
                             
                         </fw>
+                        <fw type="retro-nu" place="bottom-right" facs="#retro_28">
+                            <unclear reason="illegible">
+                            <gap reason="illegible"/>OT. BERRETTA <gap reason="illegible"/><gap reason="illegible"/> -TERNI
+                            </unclear>
+                       </fw>      
+
+
                     </p>
                 </div>
             </body>
@@ -396,17 +403,23 @@
                 <div facs="#retro-postcard-32" type="retro">
                     <fw type="no.cartolina" place="top-right" facs="#c32R_num">32</fw>
                 </div>
+                <div facs="#C32R:cifra" type="retro_cifra">
+                <fw type="numcifra" place="rigth" facs="#C32R_cifra">8076</fw>
+                </div>
                 
                 
                 <div type="tipografia">
                     <p rend="writing-mode(horizontal-lr) text-orientation(sideways)">
-                        <fw type="retro-tipo" place="left" facs="#retro_postcard_28">
+                        <fw type="retro-tipo" place="left" facs="#retro_postcard_32">
                             
                             <s>1939 -</s>
                             <s>Stab. Grafica Cesare Capello-<placeName ref="MI"> Milano</placeName></s>
                             
                         </fw>
                     </p>
+                    <p>
+                        <fw type="re_num" place="bottom" facs="#num_retro_32"> F.C.S.</fw>
+                    </p>    
                 </div>
             </body>
         </text>
